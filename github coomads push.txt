@@ -1,0 +1,190 @@
+working on github 
+
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo
+$  mkdir git_demo
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo
+$ cd git_demo
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/git_demo
+$ git config --global user.name "kannappagoud-shivagond"
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/git_demo
+$ git config --global user.name
+kannappagoud-shivagond
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/git_demo
+$ git config --global user.email
+80326156+kannappagoud-shivagond@users.noreply.github.com
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/git_demo
+$ whoami
+kannappagoud_shiva
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/git_demo
+$ pwd
+/c/Users/kannappagoud_shiva/Desktop/Software Engg/localrepo/git_demo
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/git_demo
+$ ls -l
+total 0
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/git_demo
+$ cd ..
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo
+$ ls -l
+total 0
+drwxr-xr-x 1 kannappagoud_shiva 1049089 0 Sep  6 10:28 git_demo/
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo
+$ cd get_demo
+bash: cd: get_demo: No such file or directory
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo
+$ touch demo.txt
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo
+$ cd git_demo
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/git_demo
+$ touch demo_txt
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/git_demo
+$ git add demo.txt
+fatal: not a git repository (or any of the parent directories): .git
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/git_demo
+$ touch demo_txt
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/git_demo
+$ git commit -m "Committing the file"
+fatal: not a git repository (or any of the parent directories): .git
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/git_demo
+$ git init
+Initialized empty Git repository in C:/Users/kannappagoud_shiva/Desktop/Software Engg/localrepo/git_demo/.git/
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/git_demo (master)
+$ git add demo_txt
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/git_demo (master)
+$ git commit -m "Commited changes in file"
+[master (root-commit) ddcd1a6] Commited changes in file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 demo_txt
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/git_demo (master)
+$ git remote add origin https://github.com/kannappagoud-shivagond/remoterepo.git
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/git_demo (master)
+$ git remote - v
+error: Unknown subcommand: -
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/git_demo (master)
+$ git remote -v
+origin  https://github.com/kannappagoud-shivagond/remoterepo.git (fetch)
+origin  https://github.com/kannappagoud-shivagond/remoterepo.git (push)
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/git_demo (master)
+$ git push origin master
+fatal: helper error (-1): authentication prompt was canceled
+error: unable to read askpass response from 'C:/Users/kannappagoud_shiva/AppData/Local/Programs/Git/mingw64/libexec/git-core/git-gui--askpass'
+Username for 'https://github.com':
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/kannappagoud-shivagond/remoterepo.git/'
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/git_demo (master)
+$ git push origin master
+fatal: Response status code does not indicate success: 401 (Unauthorized).
+Kremote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/kannappagoud-shivagond/remoterepo.git/'
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/git_demo (master)
+$ git remote -v
+origin  https://github.com/kannappagoud-shivagond/remoterepo.git (fetch)
+origin  https://github.com/kannappagoud-shivagond/remoterepo.git (push)
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/git_demo (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 242 bytes | 242.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/kannappagoud-shivagond/remoterepo.git
+ * [new branch]      master -> master
+
+........................................................................................
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo
+$ git init demo4
+Initialized empty Git repository in C:/Users/kannappagoud_shiva/Desktop/Software Engg/localrepo/demo4/.git/
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo
+$ cd demo4
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/demo4 (master)
+$ git pull https://github.com/kannappagoud-shivagond/face-detection.git
+remote: Enumerating objects: 91, done.
+remote: Counting objects: 100% (91/91), done.
+remote: Compressing objects: 100% (75/75), done.
+remote: Total 91 (delta 1), reused 91 (delta 1), pack-reused 0
+Unpacking objects: 100% (91/91), 185.39 KiB | 682.00 KiB/s, done.
+From https://github.com/kannappagoud-shivagond/face-detection
+ * branch            HEAD       -> FETCH_HEAD
+
+kannappagoud_shiva@THBSSTRLPT-183 MINGW64 ~/Desktop/Software Engg/localrepo/demo4 (master)
+$
+..........................................................................................................
+
+File push
+go to localrepo director and open the  gitBash
+1. create directory
+2. cd to the new created director
+3. create a new file  : touch demo.txt
+4. git init :---> curr directory
+5  git add demo.txt
+6 git commit -m message
+7. git remote add origin https://github.com/mythsubu1073busfund/neweclipserepo1.git
+8. git removte -v
+9. git push origin master
+................................................................................................
+ 
+File pull from remote  repository
+ 
+1. git init demo_repo
+2. git pull https://github.com/mythsubu1073busfund/neweclipserepo1.git
+......................................................................................................
+ 
+
+File push using clone
+1. go to localrepo director and open the  gitBash
+2. git clone https://github.com/mythsubu1073busfund/neweclipserepo1
+3. cd neweclipserepo1
+4, Create a project in eclipse and give path : browse and give the path:local repository
+5. ls
+   /scr /bin
+ 
+6. git add .
+7. git commit -m message
+8. git push origin master
+
+
+
