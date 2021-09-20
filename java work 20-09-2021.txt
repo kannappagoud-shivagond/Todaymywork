@@ -1,0 +1,353 @@
+java:
+instalanation process:
+1.download jdk
+install jdk 
+2. download intellj or eclcips
+install it.
+
+working on basic programs 
+1.add two numbers using scaner class
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter two numbers");
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+        int sum = num1+num2;
+        System.out.println("sum ="+sum);
+    }
+}
+
+output
+Enter two numbers
+ 10
+20
+sum =30
+Process finished with exit code 0
+2. eveon or odd
+package com.thbs;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+  {
+            System.out.println("Enter given number is even or odd");
+            System.out.println("Enter the number :");
+            int num = sc.nextInt();
+            if(num%2==0)
+                System.out.printf(num+"is a even number");
+            else
+                System.out.println(num+"is odd number");
+        }
+}}
+
+                                               output
+Enter given number is even or odd
+Enter the number :
+26
+26is a even number
+Process finished with exit code 0
+Enter given number is even or odd
+Enter the number :
+ 43
+43is odd number
+
+Process finished with exit code 0
+Q3. check even or odd using ternary operator
+package com.thbs;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+ System.out.println("finding largest of 3 nos. using ternary");
+        System.out.println("Enter three numbers :");
+        int n1 = sc.nextInt();
+        double n2 = sc.nextDouble();
+        long n3 = sc.nextInt();
+        double lar1 = (n1>n2)?n1:n2;
+        double lar2 = (lar1>n3)?lar1:n3;
+        System.out.println("Largest of numbers:" +lar2);
+}
+}
+                                      output
+finding largest of 3 nos. using ternary
+Enter three numbers :
+5
+6
+7
+Largest of numbers:7.0
+
+4.type casting :
+package com.thbs;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+float f1 = 13.33f;
+        double d1 = f1;
+        float f2 = (float)d1;
+        int i1 = (int) d1;
+        System.out.println("f1 value:" +f1);
+        System.out.println("i1 value:"+i1);
+        System.out.println("d1 value:"+d1);
+        System.out.printf(" formatted d1 : %.2f",d1);
+}
+}
+                output
+f1 value:13.33
+i1 value:13
+d1 value:13.329999923706055
+ formatted d1 : 13.33
+Process finished with exit code 0
+ 
+5.UNARY OPERATOR:
+package com.thbs;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+int i =10;
+int ans =++i;
+System.out.println(i+" "+ans);
+int ans1 = i++;
+System.out.println(i+" "+ans);
+}
+}
+ OUTPUT
+11 11
+12 11
+Process finished with exit code 0
+6.reverse number:
+package com.thbs;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+System.out.println("Enter the number to reversed:");
+        int num = sc.nextInt();
+        int revnum = rereverseNum(num);
+        System.out.println("Reverse of "+num+"is :"+revnum);
+
+    }
+
+    public static int rereverseNum(int n) {
+        int rem = 0, revnum = 0;
+        while ((n != 0)) {
+            rem = n % 10;
+            revnum = revnum * 10 + rem;
+            n = n / 10;
+        }
+        return revnum;
+
+    }
+}
+                                               output
+Enter the number to reversed:
+1234
+Reverse of 1234is :4321
+Process finished with exit code 0
+
+prime or not
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+System.out.print("Enter a number : ");
+    int n = sc.nextInt();
+    if (isPrime(n)) {
+        System.out.println(n + " is a prime number");
+    } else {
+        System.out.println(n + " is not a prime number");
+    }
+}
+
+public static boolean isPrime(int n) {
+    if (n <= 1) {
+        return false;
+    }
+    for (int i = 2; i < Math.sqrt(n); i++) {
+        if (n % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+ out put
+Enter a number : 
+23
+23 is a prime number
+Process finished with exit code 0
+
+7.factorial of given number
+
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+System.out.print("Enter a number : ");
+        int n = sc.nextInt();
+       long fact = factorial(n);
+        System.out.println("factorial of "+n+" is: "+fact);
+        }
+    public static long factorial (int num)
+    {
+
+       long f=1;
+       for(int i=1; i<=num;i++)
+           f*=i;
+           return f;
+    }
+}
+            out put
+Enter a number : 5
+factorial of 5 is: 120
+Process finished with exit code 0
+switch case:
+to find no. of days in given month number
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+System.out.println("enter the month number:");
+        int mno = sc.nextInt();
+        String msg = tofinddays(mno);
+        System.out.println("the month no.  " + mno + "  " + msg);
+    }
+
+    public static String tofinddays(int mno) {
+
+        String msg = "";
+        switch (mno) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                msg = "has 31 days";
+                break;
+            case 2:
+                msg = "has 28 or 29 days";
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                msg = " has 30 days";
+                break;
+            default:
+                msg = "invalid month no.";
+        }
+        return msg;
+    }
+}
+
+ output
+enter the month number:
+ 2
+the month no.  2  has 28 or 29 days
+Process finished with exit code 0
+
+Arrays
+package com.thbs;
+
+public class Main {
+
+    public static void main(String[] args) {
+	int[] arr ={10,20,30,40,50};
+        System.out.println("printing the elements in the array:");
+        for(int i=0;i<arr.length;i++)
+        {
+            System.out.println(arr[i]+"   ");
+        }
+}
+}
+                     output
+printing the elements in the array:
+10   
+20   
+30   
+40   
+50   
+Process finished with exit code 0
+package com.thbs;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the no. of elements:");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        int sum=0;
+        System.out.println("enter the array elements:");
+        for (int i=0;i<arr.length;i++)
+        {
+            arr[i] = sc.nextInt();
+            sum+=arr[i];
+        }
+
+        System.out.println("printing the elements in the array");
+        for (int i=0;i<arr.length;i++)
+        {
+            System.out.print(arr[i]+"    ");
+        }
+        System.out.println();
+        System.out.println("the sum of elements in array: "+sum );
+
+        sc.close();
+
+    }
+}
+    
+     output
+Enter the no. of elements:
+4 5 6 7 8 9 9 5 
+enter the array elements:
+printing the elements in the array
+5    6    7    8    
+the sum of elements in array: 26
+Process finished with exit code 0
+
+
+
+
+
+
+
+
+
+
