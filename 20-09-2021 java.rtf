@@ -1,0 +1,143 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fmodern JetBrains Mono;}}
+{\colortbl ;\red204\green120\blue50;\red169\green183\blue198;\red255\green198\blue109;\red152\green118\blue170;\red106\green135\blue89;\red104\green151\blue187;\red128\green128\blue128;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 java:\par
+instalanation process:\par
+1.download jdk\par
+install jdk \par
+2. download intellj or eclcips\par
+install it.\par
+\par
+working on basic programs \par
+1.add two numbers using scaner class\par
+
+\pard\box\brdrdash\brdrw0 \sa200\sl276\slmult1\cf1\f1\fs20 import \cf2 java.util.Scanner\cf1 ;\line\line public class \cf2 Main \{\line\line     \cf1 public static void \cf3 main\cf2 (String[] args) \{\line         \line         Scanner sc = \cf1 new \cf2 Scanner(System.\cf4\i in\cf2\i0 )\cf1 ;\line         \cf2 System.\cf4\i out\cf2\i0 .println(\cf5 "Enter two numbers"\cf2 )\cf1 ;\line         int \cf2 num1 = sc.nextInt()\cf1 ;\line         int \cf2 num2 = sc.nextInt()\cf1 ;\line         int \cf2 sum = num1+num2\cf1 ;\line         \cf2 System.\cf4\i out\cf2\i0 .println(\cf5 "sum ="\cf2 +sum)\cf1 ;\line     \cf2\}\line\}\line\par
+
+\pard\sa200\sl276\slmult1\cf0\f0\fs22 output\par
+Enter two numbers\par
+ 10\par
+20\par
+sum =30\par
+Process finished with exit code 0\par
+2. eveon or odd\par
+
+\pard\box\brdrdash\brdrw0 \sa200\sl276\slmult1\cf1\f1\fs20 package \cf2 com.thbs\cf1 ;\line\line import \cf2 java.util.Scanner\cf1 ;\line\line public class \cf2 Main \{\line\line     \cf1 public static void \cf3 main\cf2 (String[] args) \{\line\line         Scanner sc = \cf1 new \cf2 Scanner(System.\cf4\i in\cf2\i0 )\cf1 ;\par
+
+\pard\sa200\sl276\slmult1\cf0\f0\fs22\par
+
+\pard\box\brdrdash\brdrw0 \sa200\sl276\slmult1\cf2\fs20   \f1\{\line             System.\cf4\i out\cf2\i0 .println(\cf5 "Enter given number is even or odd"\cf2 )\cf1 ;\line             \cf2 System.\cf4\i out\cf2\i0 .println(\cf5 "Enter the number :"\cf2 )\cf1 ;\line             int \cf2 num = sc.nextInt()\cf1 ;\line             if\cf2 (num%\cf6 2\cf2 ==\cf6 0\cf2 )\line                 System.\cf4\i out\cf2\i0 .printf(num+\cf5 "is a even number"\cf2 )\cf1 ;\line             else\line                 \cf2 System.\cf4\i out\cf2\i0 .println(num+\cf5 "is odd number"\cf2 )\cf1 ;\line         \cf2\}\line\}\}\par
+\par
+\f0\lang1033                                                output\par
+Enter given number is even or odd\par
+Enter the number :\par
+26\par
+26is a even number\par
+Process finished with exit code 0\par
+Enter given number is even or odd\par
+Enter the number :\par
+ 43\par
+43is odd number\par
+\par
+Process finished with exit code 0\par
+Q3. check even or odd using ternary operator\par
+\cf1\f1 package \cf2 com.thbs\cf1 ;\line\line import \cf2 java.util.Scanner\cf1 ;\line\line public class \cf2 Main \{\line\line     \cf1 public static void \cf3 main\cf2 (String[] args) \{\line\line         Scanner sc = \cf1 new \cf2 Scanner(System.\cf4\i in\cf2\i0 )\cf1 ;\cf2\f0\par
+\f1  System.\cf4\i out\cf2\i0 .println(\cf5 "finding largest of 3 nos. using ternary"\cf2 )\cf1 ;\line         \cf2 System.\cf4\i out\cf2\i0 .println(\cf5 "Enter three numbers :"\cf2 )\cf1 ;\line         int \cf2 n1 = sc.nextInt()\cf1 ;\line         double \cf2 n2 = sc.nextDouble()\cf1 ;\line         long \cf2 n3 = sc.nextInt()\cf1 ;\line         double \cf2 lar1 = (n1>n2)?n1:n2\cf1 ;\line         double \cf2 lar2 = (lar1>n3)?lar1:n3\cf1 ;\line         \cf2 System.\cf4\i out\cf2\i0 .println(\cf5 "Largest of numbers:" \cf2 +lar2)\cf1 ;\line\cf2\}\line\}\par
+\cf0\f0                                       output\par
+finding largest of 3 nos. using ternary\par
+Enter three numbers :\par
+5\par
+6\par
+7\par
+Largest of numbers:7.0\par
+\par
+\fs40 4.type casting :\par
+\cf1\f1\fs20 package \cf2 com.thbs\cf1 ;\line\line import \cf2 java.util.Scanner\cf1 ;\line\line public class \cf2 Main \{\line\line     \cf1 public static void \cf3 main\cf2 (String[] args) \{\cf0\f0\fs40\par
+\cf1\f1\fs20 float \cf2 f1 = \cf6 13.33f\cf1 ;\line         double \cf2 d1 = f1\cf1 ;\line         float \cf2 f2 = (\cf1 float\cf2 )d1\cf1 ;\line         int \cf2 i1 = (\cf1 int\cf2 ) d1\cf1 ;\line         \cf2 System.\cf4\i out\cf2\i0 .println(\cf5 "f1 value:" \cf2 +f1)\cf1 ;\line         \cf2 System.\cf4\i out\cf2\i0 .println(\cf5 "i1 value:"\cf2 +i1)\cf1 ;\line         \cf2 System.\cf4\i out\cf2\i0 .println(\cf5 "d1 value:"\cf2 +d1)\cf1 ;\line         \cf2 System.\cf4\i out\cf2\i0 .printf(\cf5 " formatted d1 : %.2f"\cf1 ,\cf2 d1)\cf1 ;\line\cf2\}\line\}\par
+\f0                 output\par
+f1 value:13.33\par
+i1 value:13\par
+d1 value:13.329999923706055\par
+ formatted d1 : 13.33\par
+Process finished with exit code 0\par
+ \par
+\cf0\fs28 5.UNARY OPERATOR:\par
+\cf1\f1\fs20 package \cf2 com.thbs\cf1 ;\line\line import \cf2 java.util.Scanner\cf1 ;\line\line public class \cf2 Main \{\line\line     \cf1 public static void \cf3 main\cf2 (String[] args) \{\cf0\f0\fs28\par
+\cf1\f1\fs20 int \cf2 i =\cf6 10\cf1 ;\line int \cf2 ans =++i\cf1 ;\line\cf2 System.\cf4\i out\cf2\i0 .println(i+\cf5 " "\cf2 +ans)\cf1 ;\line int \cf2 ans1 = i++\cf1 ;\line\cf2 System.\cf4\i out\cf2\i0 .println(i+\cf5 " "\cf2 +ans)\cf1 ;\par
+\f0\}\par
+\}\par
+ OUTPUT\par
+11 11\par
+12 11\par
+Process finished with exit code 0\f1\par
+\cf0\f0\fs28 6.reverse number:\par
+\cf1\f1\fs20 package \cf2 com.thbs\cf1 ;\line\line import \cf2 java.util.Scanner\cf1 ;\line\line public class \cf2 Main \{\line\line     \cf1 public static void \cf3 main\cf2 (String[] args) \{\line\line         Scanner sc = \cf1 new \cf2 Scanner(System.\cf4\i in\cf2\i0 )\cf1 ;\cf0\f0\fs28\par
+\cf2\f1\fs20 System.\cf4\i out\cf2\i0 .println(\cf5 "Enter the number to reversed:"\cf2 )\cf1 ;\line         int \cf2 num = sc.nextInt()\cf1 ;\line         int \cf2 revnum = \i rereverseNum\i0 (num)\cf1 ;\line         \cf2 System.\cf4\i out\cf2\i0 .println(\cf5 "Reverse of "\cf2 +num+\cf5 "is :"\cf2 +revnum)\cf1 ;\line\line     \cf2\}\line\line     \cf1 public static int \cf3 rereverseNum\cf2 (\cf1 int \cf2 n) \{\line         \cf1 int \cf2 rem = \cf6 0\cf1 , \cf2 revnum = \cf6 0\cf1 ;\line         while \cf2 ((n != \cf6 0\cf2 )) \{\line             rem = n % \cf6 10\cf1 ;\line             \cf2 revnum = revnum * \cf6 10 \cf2 + rem\cf1 ;\line             \cf2 n = n / \cf6 10\cf1 ;\line         \cf2\}\line         \cf1 return \cf2 revnum\cf1 ;\line\line     \cf2\}\line\}\cf0\par
+\f0                                                output\par
+\cf2 Enter the number to reversed:\par
+1234\par
+Reverse of 1234is :4321\par
+Process finished with exit code 0\par
+\par
+prime or not\par
+\cf1\f1 import \cf2 java.util.Scanner\cf1 ;\line\line public class \cf2 Main \{\line\line     \cf1 public static void \cf3 main\cf2 (String[] args) \{\par
+System.\cf4\i out\cf2\i0 .print(\cf5 "Enter a number : "\cf2 )\cf1 ;\line     int \cf2 n = sc.nextInt()\cf1 ;\line     if \cf2 (\i isPrime\i0 (n)) \{\line         System.\cf4\i out\cf2\i0 .println(n + \cf5 " is a prime number"\cf2 )\cf1 ;\line     \cf2\} \cf1 else \cf2\{\line         System.\cf4\i out\cf2\i0 .println(n + \cf5 " is not a prime number"\cf2 )\cf1 ;\line     \cf2\}\line\}\line\line\cf1 public static boolean \cf3 isPrime\cf2 (\cf1 int \cf2 n) \{\line     \cf1 if \cf2 (n <= \cf6 1\cf2 ) \{\line         \cf1 return false;\line     \cf2\}\line     \cf1 for \cf2 (\cf1 int \cf2 i = \cf6 2\cf1 ; \cf2 i < Math.\i sqrt\i0 (n)\cf1 ; \cf2 i++) \{\line         \cf1 if \cf2 (n % i == \cf6 0\cf2 ) \{\line             \cf1 return false;\line         \cf2\}\line     \}\line     \cf1 return true;\line\cf2\}\par
+\f0  out put\par
+Enter a number : \par
+23\par
+23 is a prime number\par
+Process finished with exit code 0\par
+\par
+\cf0\fs36 7.factorial of given number\par
+\cf2\f1\fs20\line\line\cf1 import \cf2 java.util.Scanner\cf1 ;\line\line public class \cf2 Main \{\line\line     \cf1 public static void \cf3 main\cf2 (String[] args) \{\line\line         Scanner sc = \cf1 new \cf2 Scanner(System.\cf4\i in\cf2\i0 )\cf1 ;\cf2\par
+System.\cf4\i out\cf2\i0 .print(\cf5 "Enter a number : "\cf2 )\cf1 ;\line         int \cf2 n = sc.nextInt()\cf1 ;\line        long \cf2 fact = \i factorial\i0 (n)\cf1 ;\line         \cf2 System.\cf4\i out\cf2\i0 .println(\cf5 "factorial of "\cf2 +n+\cf5 " is: "\cf2 +fact)\cf1 ;\line         \cf2\}\line     \cf1 public static long \cf3 factorial \cf2 (\cf1 int \cf2 num)\line     \{\line\line        \cf1 long \cf2 f=\cf6 1\cf1 ;\line        for\cf2 (\cf1 int \cf2 i=\cf6 1\cf1 ; \cf2 i<=num\cf1 ;\cf2 i++)\line            f*=i\cf1 ;\line            return \cf2 f\cf1 ;\line     \cf2\}\line\}\par
+\f0             \cf0\fs32 out put\par
+Enter a number : 5\par
+factorial of 5 is: 120\par
+Process finished with exit code 0\par
+\ul switch case:\par
+\cf7\ulnone\f1\fs20 to find no. of days in given month number\par
+\cf1 import \cf2 java.util.Scanner\cf1 ;\line\line public class \cf2 Main \{\line\line     \cf1 public static void \cf3 main\cf2 (String[] args) \{\line\line         Scanner sc = \cf1 new \cf2 Scanner(System.\cf4\i in\cf2\i0 )\cf1 ;\cf0\ul\f0\fs32\par
+\cf2\ulnone\f1\fs20 System.\cf4\i out\cf2\i0 .println(\cf5 "enter the month number:"\cf2 )\cf1 ;\line         int \cf2 mno = sc.nextInt()\cf1 ;\line         \cf2 String msg = \i tofinddays\i0 (mno)\cf1 ;\line         \cf2 System.\cf4\i out\cf2\i0 .println(\cf5 "the month no.  " \cf2 + mno + \cf5 "  " \cf2 + msg)\cf1 ;\line     \cf2\}\line\line     \cf1 public static \cf2 String \cf3 tofinddays\cf2 (\cf1 int \cf2 mno) \{\line\line         String msg = \cf5 ""\cf1 ;\line         switch \cf2 (mno) \{\line             \cf1 case \cf6 1\cf2 :\line             \cf1 case \cf6 3\cf2 :\line             \cf1 case \cf6 5\cf2 :\line             \cf1 case \cf6 7\cf2 :\line             \cf1 case \cf6 8\cf2 :\line             \cf1 case \cf6 10\cf2 :\line             \cf1 case \cf6 12\cf2 :\line                 msg = \cf5 "has 31 days"\cf1 ;\line                 break;\line             case \cf6 2\cf2 :\line                 msg = \cf5 "has 28 or 29 days"\cf1 ;\line                 break;\line             case \cf6 4\cf2 :\line             \cf1 case \cf6 6\cf2 :\line             \cf1 case \cf6 9\cf2 :\line             \cf1 case \cf6 11\cf2 :\line                 msg = \cf5 " has 30 days"\cf1 ;\line                 break;\line             default\cf2 :\line                 msg = \cf5 "invalid month no."\cf1 ;\line         \cf2\}\line         \cf1 return \cf2 msg\cf1 ;\line     \cf2\}\line\}\par
+\par
+\f0  output\par
+enter the month number:\par
+ 2\par
+the month no.  2  has 28 or 29 days\par
+Process finished with exit code 0\f1\line\par
+\cf0\f0\fs32 Arrays\par
+\cf1\f1\fs20 package \cf2 com.thbs\cf1 ;\line\line public class \cf2 Main \{\line\line     \cf1 public static void \cf3 main\cf2 (String[] args) \{\line\tab\cf7 int[] arr =\{10,20,30,40,50\};\line         System.out.println("printing the elements in the array:");\line         for(int i=0;i<arr.length;i++)\line         \{\line             System.out.println(arr[i]+"   ");\line         \}\par
+\f0\}\par
+\}\par
+                     output\par
+printing the elements in the array:\par
+10   \par
+20   \par
+30   \par
+40   \par
+50   \par
+Process finished with exit code 0\par
+\cf1\f1 package \cf2 com.thbs\cf1 ;\line\line import \cf2 java.util.Scanner\cf1 ;\line\line public class \cf2 Main \{\line\line     \cf1 public static void \cf3 main\cf2 (String[] args) \{\par
+\cf7\f0\par
+\cf2\f1 Scanner sc = \cf1 new \cf2 Scanner(System.\cf4\i in\cf2\i0 )\cf1 ;\line         \cf2 System.\cf4\i out\cf2\i0 .println(\cf5 "Enter the no. of elements:"\cf2 )\cf1 ;\line         int \cf2 n = sc.nextInt()\cf1 ;\line         int\cf2 [] arr = \cf1 new int\cf2 [n]\cf1 ;\line         int \cf2 sum=\cf6 0\cf1 ;\line         \cf2 System.\cf4\i out\cf2\i0 .println(\cf5 "enter the array elements:"\cf2 )\cf1 ;\line         for \cf2 (\cf1 int \cf2 i=\cf6 0\cf1 ;\cf2 i<arr.\cf4 length\cf1 ;\cf2 i++)\line         \{\line             arr[i] = sc.nextInt()\cf1 ;\line             \cf2 sum+=arr[i]\cf1 ;\line         \cf2\}\line\line         System.\cf4\i out\cf2\i0 .println(\cf5 "printing the elements in the array"\cf2 )\cf1 ;\line         for \cf2 (\cf1 int \cf2 i=\cf6 0\cf1 ;\cf2 i<arr.\cf4 length\cf1 ;\cf2 i++)\line         \{\line             System.\cf4\i out\cf2\i0 .print(arr[i]+\cf5 "    "\cf2 )\cf1 ;\line         \cf2\}\line         System.\cf4\i out\cf2\i0 .println()\cf1 ;\line         \cf2 System.\cf4\i out\cf2\i0 .println(\cf5 "the sum of elements in array: "\cf2 +sum )\cf1 ;\line\line         \cf2 sc.close()\cf1 ;\line\line     \cf2\}\line\}\line\f0     \par
+     output\par
+Enter the no. of elements:\par
+4 5 6 7 8 9 9 5 \par
+enter the array elements:\par
+printing the elements in the array\par
+5    6    7    8    \par
+the sum of elements in array: 26\par
+Process finished with exit code 0\f1\par
+\cf7\par
+\cf0\f0\fs32\par
+\fs20\par
+\cf2\f1\par
+\cf0\f0\fs28\par
+\cf2\f1\fs20\par
+\cf0\fs40\par
+\cf2\fs20\lang9\par
+
+\pard\sa200\sl276\slmult1\cf0\f0\fs22\par
+\par
+\par
+}
+ 
