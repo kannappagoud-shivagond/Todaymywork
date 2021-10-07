@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var  a=10; // global scope outside the function
+     myFunction();
+    function myFunction()
+    {
+       let a=12;  // local scope within the function
+       document.write(a*a+"<br>");
+    }
+    document.write(a*a+"<br>");
+</script>
+</body>
+</html>

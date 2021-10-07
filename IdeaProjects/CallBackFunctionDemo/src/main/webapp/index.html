@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>callbackfunction</title>
+</head>
+<body>
+<p id="res"></p>
+</body>
+<script>
+    var s="";
+    function display(something)
+    {
+
+       s = s+"  "+something+"<br>";
+      document.getElementById("res").innerHTML = s;
+    }
+    // function is a datatype in JS
+    // The reference of display is cpoied into myCallback function
+    // myCallback starts working like display function
+    function findMax(num1,num2,myCallback)
+    {
+      let max=0;
+       if (num1>num2)
+         max= num1;
+         else
+         max = num2;
+
+         myCallback(max);
+    }
+    function add(n1,n2,myCallback)
+    {
+     let sum  = n1+n2;
+      myCallback(sum);
+     }
+    // sequence will be according to function call
+    findMax(15,5,display);
+    add(100,50,display);
+</script>
+</html>
