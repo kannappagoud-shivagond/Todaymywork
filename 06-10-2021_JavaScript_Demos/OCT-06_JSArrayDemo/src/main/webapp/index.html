@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSArrays</title>
+
+</head>
+<body>
+<script type="text/javascript">
+      myArray = new Array("Wind","Rain","Fire","Water","Air","Sky");
+      urarray= new Array("1,2,3,4,5");
+      document.write(myArray+"<br>");
+<!--for each element loop-->
+    for( i in myArray)
+    {
+        document.write("Array element is: "+myArray[i]+"<br>");
+    }
+<!--    joins all element into string-->
+    document.write(myArray.join()+"<br>");
+
+<!--concat:merging two arrays-->
+document.write(myArray.concat(urarray)+"<br>");
+
+<!--pop: removes the last element of the array and returns it-->
+document.write(myArray.pop()+"<br>");
+
+<!--shift:removes the 1st element of the array and returns it-->
+document.write(myArray.shift()+"<br>");
+document.write(myArray.unshift("Ocean","Storm")+"<br>");
+
+//sort: sort in ascending order and returns the array
+document.write(myArray.sort()+"<br>");
+
+//reverse:
+document.write(myArray.reverse()+"<br>");
+//descending order using reverse()
+document.write(myArray.sort()+"<br>");
+
+//slice: to extarct a subarray
+var subarray = myArray.slice(1,3);
+document.write(myArray+"<br>");
+// index value 1 and 2 will be extracted 3rd index is not included
+document.write(subarray+"<br>");
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>

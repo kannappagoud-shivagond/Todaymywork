@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Type Conversion</title>
+</head>
+<body>
+<form action="index1.html" method="get">
+    <label> First name:</label>
+    <input type="text" name="fname" id="fname"><br>
+    <label> Last name:</label>
+    <input type="text" name="lname" id="lname"><br>
+    <label> Password:</label>
+    <input type="password" name="pword" id="pword"><br>
+    <input type="submit" value="Submit">
+</form>
+<script>
+    let y="5";
+    document.write(typeof y+" value of y "+y+"<br>");
+    let z=+y;
+    document.write(typeof z+" value of z "+z+"<br>");
+
+    let x=333;
+     document.write(typeof x+"<br>");
+     document.write(String(x)+"<br>");
+     document.write((45+38).toString()+"<br>");
+     var car1= {type:"maruti", model:"500",color:"red"};
+     document.write(car1.toString()+"<br>");
+
+
+    mystr1 = new String("Click here to go w3Schools ");
+document.write(mystr1.link("http://www.w3schools.com")+"<br>");
+
+var url = "index1.html?fname=Mythili&lname=G&pword=1234";
+var encurl= encodeURIComponent(url)  //encoding
+document.write(encurl);
+var decodeurl = decodeURIComponent(encurl); //decoding
+document.write(decodeurl);
+
+document.write(mystr1.big()+"<br>");
+document.write(mystr1.bold()+"<br>");
+document.write(mystr1.charAt(0)+"<br>");
+document.write(mystr1.charCodeAt(0)+"<br>");
+
+ms = "Welcome to java script";
+splitms=ms.split("  ");
+for( i in splitms)
+{
+    document.write(splitms[i]+"<br>");
+    }
+document.write(ms.slice(7,13)+"<br>");
+document.write(ms.slice(-12,-6)+"<br>");
+document.write(ms.substr(7,13)+"<br>"); //second parameter specifies the length of the substring
+
+document.write(ms.replace("Welcome to", "Swagat")+"<br>");
+
+
+</script>
+</body>
+</html>

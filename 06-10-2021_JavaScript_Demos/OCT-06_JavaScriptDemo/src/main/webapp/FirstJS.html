@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First JavaScript Demo</title>
+    <script type="text/javascript" src="file.js"></script>
+</head>
+<body>
+<p id="demo">welcome</p>
+<script type="text/javascript">
+    document.getElementById("demo").innerHTML="Welcome to Java Script World";
+var str1 = "welcome us";
+var str2 = "welcome javascript";
+document.write(str1+"  "+str2);
+alert(10+20);
+
+var a = prompt("Enter first number");
+var b= prompt("Enter second number");
+var sum = 0;
+sum = parseInt(a)+parseInt(b);
+alert(sum);
+var res=0;
+for (let i=1;i<=3;i++)
+{
+    res+=(Number)(prompt("Enter the number","0");
+ }
+    alert(res);
+var num1=150;
+var num2=120;
+var num3=10;
+if(num1>num2)
+    document.write(num1+" is largest"+"<br/>");
+else
+    document.write(num2+"is largest"+"<br/>");
+
+var lar = ((num1>num2)&&(num1>num3)) ? num1:((num2>num3)?num2:num3);
+document.write("the largest of three numbers is: "+lar+"<br/>");
+
+var city= "Bangalore";
+switch(city)
+{
+    case "Bangalore" : document.write("capital"+"<br/>");
+                        break;
+    case "Chennai" : document.write("madras"+"<br/>");
+                        break;
+}
+
+let x;
+x=5;
+x="daamu"
+document.write(x+"<br/>");   <!-- same variables can be used to hold different types of data-->
+
+let n1=54.55;
+n1=54;
+document.write(n1+"<br/>");
+
+x=10; <!--  here we did not initialise the x because it is already declared above-->
+let y=15;
+document.write((x==y)+"<br/>");
+
+const place=["Bangalore","Chennai","mumbai"];
+document.write(place[2]+"<br/>");
+
+<!-- object are complex variables. It described by many other variables-->
+<!-- car1 is described by type,model colour.-->
+const car1={type:"Celario",model:"800",colour:"Black"};
+document.write(car1.type+"<br/>");
+document.write(car1.model+"<br/>");
+document.write(car1.colour+"<br/>");
+
+var cararr=[{type:"Celario",model:"800",colour:"Black"},
+             {type:"Bugatti",model:"700",colour:"Black"},
+             {type:"Lambo",model:"900",colour:"Black"}     ];
+
+    for(let k=0;k<cararr.length;k++)
+    {
+        document.write(cararr[k].type+"<br/>");
+     }
+alert(add(10,20));   <!--called from file.js file refer line no.6 -->
+
+
+</script>
+</body>
+</html>

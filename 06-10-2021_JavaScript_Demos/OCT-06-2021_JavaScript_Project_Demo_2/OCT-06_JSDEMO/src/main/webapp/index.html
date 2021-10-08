@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Type Conversion</title>
+</head>
+<body>
+<form action="index1.html" method="get">
+    <label> First name:</label>
+    <input type="text" name="fname" id="fname"><br>
+    <label> Last name:</label>
+    <input type="text" name="lname" id="lname"><br>
+    <label> Password:</label>
+    <input type="password" name="pword" id="pword"><br>
+</form>
+<script>
+var url = "index1.html?fname=Mythili&lname=G&pword=1234";
+var encurl= encodeURIComponent(url)  //encoding
+document.write(encurl);
+var decodeurl = decodeURIComponent(encurl); //decoding
+document.write(decodeurl);
+
+
+mystr = new String("Hello World");
+document.write(mystr.length+"<br>");
+
+mystr1= new String("Click here to go to W3Schools.com");
+document.write(mystr1.link("http://www.w3schools.com")+"<br>");
+</script>
+
+</body>
+</html>
