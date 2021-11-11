@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Form</title>
+</head>
+<body>
+<form action="ConfirmPayment.html" method="get">  <!--for details not to be shown on web we should use method as a post-->
+    <h1>Payment Form</h1>
+    <h2>Contact Information</h2>
+    <p>required follows *</p>
+    <p>Name: * <input type="text" name="name" id="name" required></p><br>
+    <fieldset><legend>Gender *</legend>
+    <p> Male <input type="radio" name="gender" id="male" required> Female <input type="radio" name="gender" id="female" required> </p> <br>
+    </fieldset>
+    <p>Address <textarea name="address" id="address" cols="100" rows="8"></textarea></p><br>
+    <p>Email * <input type="email" name="email" id="email" required> </p><br>
+    <p>Pincode * <input type="number" name="pincode" id="pincode" required></p><br>
+    <hr>
+    <h2>Payment Information</h2>
+    <p>Card type: *
+    <select name="card_type" id="card_type"  required>
+        <option value="" >--select a card type--</option>
+        <option value="visa">visa</option>
+        <option value="mastercard">mastercard</option>
+        <option value="rupay">rupay</option>
+    </select>
+    </p>
+    <p>
+        Card Number *<input type="number" name="Card_number" id="Card_number" required>
+    </p>
+    <p>
+        Expiration Date *<input type="date" name="exp_date" id="exp_date" required>
+    </p>
+    <p>
+        CVV *<input type="password" name="cvv" id="cvv" required>
+    </p>
+    <p>
+    <p> Enter your password <input type="password" name="password"></p>
+    </p>
+    <input type="submit" value="Payment now">
+
+
+
+
+
+
+</form>
+</body>
+</html>
