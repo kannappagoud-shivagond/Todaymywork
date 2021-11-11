@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>closure</title>
+</head>
+<body>
+
+</body>
+<script>
+    // this is a demo on scope of the variable a.
+    let a=10;// global scope outside the function
+    myfunction();
+    function myfunction()
+    {
+        let a=12;// local scope within function
+        document.write(a*a+"<br>");
+    }
+    document.write(a*a);
+</script>
+</html>

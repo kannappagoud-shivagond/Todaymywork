@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>callbackfunction</title>
+</head>
+<body>
+<input type="text" id="n1" value="0"/><br>
+<input type="text" id="n2" value="0"/><br>
+<input type="button" id="button1" onclick="PrintMax()" value="findMax"/><br>
+<input type="button" id="button2" onclick="PrintSum()" value="findSum"/><br>
+
+<p id="res"></p>
+</body>
+<script>
+//The reference of display is copied into myCallback function
+// myCallback starts working like display function.
+    var s="";
+    function display(something)
+    {
+
+        s = s+" "+something+"<br>";
+        document.getElementById("res").innerHTML=s;
+    }
+    function findMax(num1,num2,myCallback)
+    {
+        let max=0;
+        if(num1>num2)
+            max=num1;
+        else
+            max=num2;
+            myCallback(max);
+     }
+
+      function PrintSum(n1,n2,myCallback)
+      {
+        let sum = n1+n2;
+        myCallback(sum);
+      }
+      function PrintMax()
+      {
+        var n1 = document.getElementById("n1").value;
+        var n2 = document.getElementById("n2").value;
+        //document.write(n1);
+        //document.write(n2);
+        findMax(parseInt(n1),parseInt(n2),display);
+      }
+
+      findMax(15,5,display);
+      PrintSum(100,50,display);
+      //according to sequence it will call and in this case the value is overwriting
+
+
+</script>
+</html>
